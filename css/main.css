@@ -188,16 +188,34 @@
   #menu .content .box > div p {
     color: rgb(44, 62, 80);
   }
-
+  #menu .box {
+    transition: var(--transition);
+  }
+  #menu .box :hover {
+    transform: translateY(-15px);
+  }
+ #menu .box img{
+    transition: var(--transition);
+  }
+   #menu .box :hover img {
+     transform: scale(1);
+   } 
+    #menu .box :hover p {
+     transform: scale(1);
+   }
+     #menu .box :hover h3 {
+     transform: scale(1);
+   }
+     #menu .box :hover .text {
+     transform: scale(1);
+   }
+ 
   /* End Menu */
   
   /* Start VisitUs */
-  #visitUs
-  {
   
-      padding-bottom: 100px;
-  }
-  #visitUs .box {
+  
+   #visitUs .box {
     float: left;
     width: calc(100% / 3);
     padding: 0 15px;
@@ -229,4 +247,20 @@
   {
       margin: 0;
   }
+  }
+  #visitUs .box {
+    transition: var(--transition);
+  }
+  #visitUs .box :hover {
+    transform: translateY(-15px);
+  }
+    #visitUs .box :hover p {
+     transform: scale(1);
+   }
+     #visitUs .box :hover h3 {
+     transform: scale(1);
+   }
+     #visitUs .box :hover .box {
+     transform: scale(1);
+   }
   /* End Footer */

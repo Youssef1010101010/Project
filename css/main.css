@@ -1,6 +1,7 @@
 /* Start Global Style */
 * {
     box-sizing: border-box;
+    
   }
   html
   {
@@ -263,3 +264,104 @@
      transform: scale(1);
    }
   /* End Footer */
+  /* ================= Mobile Responsive ================= */
+@media (max-width: 768px) {
+
+  /* Container */
+  .container {
+    width: 95%;
+  }
+
+  /* Navbar */
+  nav ul {
+    float: none;
+    text-align: center;
+  }
+
+  nav ul li {
+    float: none;
+    margin: 10px 0;
+  }
+
+  nav .logo {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Hero Section */
+  #heroSection {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  #heroSection .text {
+    margin-top: 120px;
+    padding: 0 15px;
+  }
+
+  #heroSection .text h1 {
+    font-size: 2rem;
+  }
+
+  #heroSection .text p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  /* About Section */
+  #about .content .text,
+  #about .content .image {
+    float: none;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  /* Menu Section */
+  #menu .content .box {
+    float: none;
+    width: 100%;
+  }
+
+  #menu .content .box > div {
+    height: auto;
+  }
+
+  #menu .content .box img {
+    height: auto;
+  }
+
+  /* Visit Us */
+  #visitUs .box {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Section Padding */
+  section {
+    padding: 30px 15px;
+  }
+}
+@media (max-width: 768px) {
+
+  #about .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* الصورة فوق */
+  #about .content .image {
+    order: 1;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* الكلام تحت */
+  #about .content .text {
+    order: 2;
+    width: 100%;
+    margin-top: 0;
+  }
+
+}
